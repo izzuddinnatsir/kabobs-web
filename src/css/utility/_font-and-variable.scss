@@ -1,0 +1,65 @@
+@font-face {
+	font-family: "Avenirnextltpro";
+	src: url("../font/AvenirNextLTPro-It.woff2") format("woff2"),
+		url("../font/AvenirNextLTPro-It.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Avenirnextltpro";
+	src: url("../font/AvenirNextLTPro-DemiIt.woff2") format("woff2"),
+		url("../font/AvenirNextLTPro-DemiIt.woff") format("woff");
+	font-weight: 600;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Avenirnextltpro";
+	src: url("../font/AvenirNextLTPro-Regular.woff2") format("woff2"),
+		url("../font/AvenirNextLTPro-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Avenirnextltpro";
+	src: url("../font/AvenirNextLTPro-Demi.woff2") format("woff2"),
+		url("../font/AvenirNextLTPro-Demi.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Avenirnextltpro";
+	src: url("../font/AvenirNextLTPro-Bold.woff2") format("woff2"),
+		url("../font/AvenirNextLTPro-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Aquino full";
+	src: url("../font/Aquino-Full.woff2") format("woff2"),
+		url("../font/Aquino-Full.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+// Typography Variables
+$aquino: "Aquino full", sans-serif;
+$avenir: "Avenirnextltpro", sans-serif;
+$medium: 600;
+$bold: 700;
+
+// Color Variables
+$white: #fff;
+$black: #222;
+$yellow: #fbce11;
+$yellow-light: #fbf3c2;
+$yellow-dark-1: #cca814;
+$yellow-dark-2: #807119;
+$yellow-dark-3: #61510e;
+$yellow-dark-4: #473c0a;
+$red: #d92c27;
+$red-light: #fad6d4;
+$red-dark: #8c1c19;
+$green: #43b049;
+$green-light: #b8e6ba;
+$green-dark: #1d4d20;
+$orange: #edad3e;

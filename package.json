@@ -1,0 +1,22 @@
+{
+	"name": "kabobs-web",
+	"version": "2.0.0",
+	"description": "A website for Kabobs Premium Kebab.",
+	"main": "src/index.html",
+	"author": "Izzuddin Natsir",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/core": "^7.3.4",
+		"parcel-bundler": "^1.11.0",
+		"sass": "^1.17.2"
+	},
+	"dependencies": {
+		"gsap": "^2.1.1",
+		"ismobilejs": "^0.5.1",
+		"smooth-scrolling": "^2.3.11"
+	},
+	"scripts": {
+		"dev": "parcel ./src/index.html",
+		"build": "parcel build ./src/index.html"
+	}
+}

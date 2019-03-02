@@ -1,0 +1,41 @@
+@import "./vendor/normalize";
+@import "./utility/font-and-variable";
+@import "./utility/helper";
+
+// General
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img {
+	object-fit: cover;
+}
+
+// Topbar
+
+// Navigaton Screen
+
+// Footer
+
+// Index Page
+@import "./page/index";
+
+// Menu Page
+
+// Menu Slide Page Type 1
+
+// Menu Slide Page Type 2
+
+// Outlet Page
+
+// Career Page
+
+// About Page
+
+// Kabobs's Secret Page
