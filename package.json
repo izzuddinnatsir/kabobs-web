@@ -21,7 +21,7 @@
 	},
 	"scripts": {
 		"dev": "parcel ./src/index.html ./src/menu.html ./src/kontak.html ./src/karir.html ./src/story.html ./src/outlet.html ./src/menu-slider-alacarte.html ./src/menu-slider-drink.html ./src/menu-slider-combobs.html",
-		"build": "parcel build ./src/index.html ./src/menu.html ./src/kontak.html ./src/karir.html ./src/story.html ./src/outlet.html ./src/menu-slider-alacarte.html ./src/menu-slider-drink.html ./src/menu-slider-combobs.html",
+		"build": "parcel build ./src/index.html ./src/menu.html ./src/kontak.html ./src/karir.html ./src/story.html ./src/outlet.html ./src/menu-slider-alacarte.html ./src/menu-slider-drink.html ./src/menu-slider-combobs.html --public-url ./",
 		"deploy": "gh-pages -d dist"
 	}
 }
