@@ -1,0 +1,33 @@
+.swiper-slide.menuSlide--drinks {
+	background-color: $yellow;
+
+	@media only screen and (min-width: 1000px) {
+		height: 100vh;
+		grid-template-rows: 100%;
+	}
+
+	.menuSlide__desc__texts__headline {
+		color: $green-dark;
+	}
+
+	.menuSlide__desc {
+		background-color: white;
+	}
+
+	.menuSlide__img {
+		width: auto;
+		height: 120px;
+		justify-self: center;
+		align-self: center;
+
+		@media only screen and (min-width: 1000px) {
+			height: 280px;
+		}
+	}
+}
+
+.slides--controller--drinks {
+	.slides--controller--btn {
+		border: $yellow-dark-1 2px solid;
+	}
+}

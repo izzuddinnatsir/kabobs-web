@@ -3,6 +3,7 @@
 	"version": "2.0.0",
 	"description": "A website for Kabobs Premium Kebab.",
 	"main": "src/index.html",
+	"homepage": "https://izzuddinnatsir.github.io/kabobs-web",
 	"author": "Izzuddin Natsir",
 	"license": "MIT",
 	"devDependencies": {
@@ -11,12 +12,15 @@
 		"sass": "^1.17.2"
 	},
 	"dependencies": {
+		"css-element-queries": "^1.1.1",
 		"gsap": "^2.1.1",
 		"ismobilejs": "^0.5.1",
-		"smooth-scrolling": "^2.3.11"
+		"smooth-scrolling": "^2.3.11",
+		"swiper": "^4.5.0"
 	},
 	"scripts": {
-		"dev": "parcel ./src/index.html",
-		"build": "parcel build ./src/index.html"
+		"dev": "parcel ./src/index.html ./src/menu.html ./src/kontak.html ./src/karir.html ./src/story.html ./src/outlet.html ./src/menu-slider-alacarte.html ./src/menu-slider-drink.html ./src/menu-slider-combobs.html",
+		"build": "parcel build ./src/index.html ./src/menu.html ./src/kontak.html ./src/karir.html ./src/story.html ./src/outlet.html ./src/menu-slider-alacarte.html ./src/menu-slider-drink.html ./src/menu-slider-combobs.html",
+		"deploy": "gh-pages -d dist"
 	}
 }

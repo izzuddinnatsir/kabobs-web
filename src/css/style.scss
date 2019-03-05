@@ -1,41 +1,153 @@
 @import "./vendor/normalize";
+@import "./vendor/swiper.min";
 @import "./utility/font-and-variable";
 @import "./utility/helper";
 
 // General
-body,
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	height: 100%;
 	width: 100%;
 }
 
 html {
+	font-family: $avenir;
+	color: $black;
+	line-height: 2.25rem;
+	font-size: 1.25rem;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	width: 100%;
+}
+
+img,
+button,
+ul,
+li {
+	display: block;
 }
 
 img {
 	object-fit: cover;
 }
 
+button.button {
+	height: 48px;
+	border-radius: 24px;
+	border: solid 2px $yellow-dark-4;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0;
+	background-color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: $avenir;
+	font-weight: bold;
+	color: $yellow-dark-4;
+	font-size: 12px;
+	letter-spacing: 4%;
+}
+
+a {
+	color: $black;
+	text-decoration: none;
+}
+
+address {
+	font-family: $avenir;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.header {
+	height: 480px;
+	width: 100%;
+	position: relative;
+}
+
+.header__title {
+	height: 240px;
+	width: auto;
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+
+	@media only screen and (min-width: 1000px) {
+		height: 320px;
+		left: 200px;
+	}
+}
+
+.contentWrapper {
+	display: grid;
+	justify-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.section {
+	display: grid;
+	width: 100%;
+	max-width: 1160px;
+}
+
+.headline-medium {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.typ-body {
+	font-family: $avenir;
+	color: $black;
+	line-height: 36px;
+	font-size: 20px;
+
+	&-tight {
+		line-height: 30px;
+	}
+}
+
 // Topbar
+@import "./component/topbar-type1";
+
+// Topbar Type 2
+@import "./component/topbar-type2";
 
 // Navigaton Screen
+@import "./component/navscreen";
 
 // Footer
+@import "./component/footer";
 
 // Index Page
 @import "./page/index";
 
 // Menu Page
+@import "./page/menu";
 
 // Menu Slide Page Type 1
+@import "./page/slider-menu";
 
 // Menu Slide Page Type 2
+@import "./page/slider-drinks";
 
 // Outlet Page
+@import "./page/outlets";
 
 // Career Page
+@import "./page/karir";
 
-// About Page
+// Contact Page
+@import "./page/kontak";
 
 // Kabobs's Secret Page
+@import "./page/tentang-kabobs";

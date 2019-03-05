@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" class="html-fixed html-menu">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Description -->
+  <meta desccription="Lihat daftar menu Kabobs disini. Pilih Ala Carte, Tambahan Isi, Drinks atau Paket Combobs!">
+  <!-- Icon and CSS -->
+  <link rel="icon" href="./img/ala-carte-underline.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.min.css">
+
+  <!-- Title -->
+  <title>Kabobs | Daftar menu</title>
+</head>
+<body class="body-fixed">
+    <div id="barba-wrapper" class="bw-fixed">
+      <main id="viewport" class="vs-viewport">
+        <div class="barba-container vs-section">
+          <!-- Contents -->
+          <div class="contentWrapper">
+            <!-- Tab navigation -->
+            <section class="section section--tabnav">
+              <ul class="nav nav-tabs tabnav" id="tabnavmenu" role="tablist">
+                <!-- Tab items -->
+                <li class="nav-item tabnav__item">
+                  <a class="nav-link tabnav__item__link active" id="alacarte-tab" data-toggle="tab" href="#alacarte" aria-controls="alacarte" aria-selected="true">
+                    ALA CARTE
+                  </a>
+                </li>
+                <li class="nav-item tabnav__item">
+                  <a class="nav-link tabnav__item__link" id="topping-tab" data-toggle="tab" href="#topping" aria-controls="topping" aria-selected="false">
+                    TAMBAHAN ISI
+                  </a>
+                </li>
+                <li class="nav-item tabnav__item">
+                  <a class="nav-link tabnav__item__link" id="drinks-tab" data-toggle="tab" href="#drinks" aria-controls="drinks" aria-selected="false">
+                    DRINKS
+                  </a>
+                </li>
+                <li class="nav-item tabnav__item">
+                  <a class="nav-link tabnav__item__link" id="combobs-tab" data-toggle="tab" href="#combobs" aria-controls="combobs" aria-selected="false">
+                    PAKET COMBOBS
+                  </a>
+                </li>
+              </ul>
+            </section>
+        
+            <!-- Catalogs -->
+            <section class="section section--catalog">
+              <div class="catalog__ctgr__icon--top">
+                <img src="./img/_menu-page/ala-carte-underline.svg">
+              </div>
+              <div class="tab-content catalog" >
+                <!-- Category: Alacarte -->
+                <div class="tab-pane fade active show catalog__ctgr" id="alacarte" role="tabpanel" aria-labelledby="alacarte-tab">
+                  <!-- Description -->
+                  <div class="catalog__item catalog__item--desc catalog__item--desc--alacarte">
+                    <img src="./img/_menu-page/ala-carte-underline.svg" alt="Ala carte" class="icon catalog__ctgr__icon--desc" />
+                    <div class="catalog__item--desc--texts">
+                      <h1 class="headline catalog__categoryDesc--headline">
+                        ALA CARTE
+                      </h1>
+                      <p>Yuk, pilih kebab sesuai<br/>varian rasa favorit kamu!</p>
+                    </div>
+                  </div>
+                  <!-- Items -->
+                  <div class="catalog__item catalog__item--alacarte" alt="classic">
+                    <h3 class="headline catalog__item__name">
+                      CLASSIC KEBAB
+                    </h3>
+                  </div>            
+                  <div class="catalog__item catalog__item--alacarte " alt="blackpepper">
+                    <h3 class="headline catalog__item__name">
+                      BLACKPEPPER KEBAB
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--alacarte " alt="fullbeef">
+                    <h3 class="headline catalog__item__name">
+                      FULLBEEF KEBAB
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--alacarte " alt="smoke-beef">
+                    <h3 class="headline catalog__item__name">
+                      SMOKE BEEF KEBAB
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--alacarte " alt="barbeque">
+                    <h3 class="headline catalog__item__name">
+                      BARBEQUE KEBAB
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--alacarte " alt="vegetable">
+                    <h3 class="headline catalog__item__name">
+                      VEGETABLE KEBAB
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--alacarte " alt="beef-cheese">
+                    <h3 class="headline catalog__item__name">
+                      BEEF CHEESE KEBAB
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--alacarte " alt="beef-cheesy-mayo">
+                    <h3 class="headline catalog__item__name">
+                      BEEF CHEESY MAYO KEBAB
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--alacarte " alt="supreme">
+                    <h3 class="headline catalog__item__name">
+                      SUPREME KEBAB
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--alacarte " alt="triple-cheese">
+                    <h3 class="headline catalog__item__name">
+                      TRIPLE CHEESE KEBAB
+                    </h3>
+                  </div>
+                </div>
+                <!-- Category: Topping -->
+                <div class="tab-pane fade catalog__ctgr" id="topping" role="tabpanel" aria-labelledby="topping-tab">
+                  <!-- Description -->
+                  <div class="catalog__item catalog__item--desc catalog__item--desc--topping">
+                    <img src="./img/_menu-page/extra-meat.png" alt="Topping" class="icon catalog__ctgr__icon--desc" />
+                    <div class="catalog__item--desc--texts">
+                      <h1 class="headline catalog__categoryDesc--headline">
+                        TAMBAHAN ISI
+                      </h1>
+                      <p>Pilih topping kesukaan kamu!</p>
+                    </div>
+                  </div>
+                  <!-- Items -->
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/extra-meat.png" alt="Extra Meat">
+                    <h3 class="headline catalog__item__name">
+                      EXTRA MEAT
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/extra-cheese.png" alt="Extra Cheese">
+                    <h3 class="headline catalog__item__name">
+                      CHEESE
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/extra-grilled-onion.png" alt="Extra Grilled Onion">
+                    <h3 class="headline catalog__item__name">
+                      GRILLED ONION
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/extra-vegie.png" alt="Extra Veggies">
+                    <h3 class="headline catalog__item__name">
+                      VEGGIES
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/extra-smoke-beef.png" alt="Extra Smoke Beef">
+                    <h3 class="headline catalog__item__name">
+                      SMOKE BEEF
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/extra-mushroom.png" alt="Extra Mushroom">
+                    <h3 class="headline catalog__item__name">
+                      MUSHROOM
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/extra-onion.png" alt="Extra Onion">
+                    <h3 class="headline catalog__item__name">
+                      ONION
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/extra-egg.png" alt="Extra Egg">
+                    <h3 class="headline catalog__item__name">
+                      EGG
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/blackpepper-sauce.png" alt="Extra Blackpepper Sauce">
+                    <h3 class="headline catalog__item__name">
+                      BLACKPEPPER SAUCE
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/barbeque-sauce.png" alt="Extra Barbeque Sauce">
+                    <h3 class="headline catalog__item__name">
+                      BARBEQUE SAUCE
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--topping">
+                    <img src="./img/topping/cheesemayo-sauce.svg" alt="Extra Cheesemayo Sauce">
+                    <h3 class="headline catalog__item__name">
+                      CHEESEMAYO SAUCE
+                    </h3>
+                  </div>
+                </div>
+                <!-- Category: Drinks -->
+                <div class="tab-pane fade catalog__ctgr" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                  <!-- Description -->
+                  <div class="catalog__item catalog__item--desc catalog__item--desc--drink">
+                    <img src="./img/_menu-page/ic-drink.svg" alt="Drinks" class="icon catalog__ctgr__icon--desc" />
+                    <div class="catalog__item--desc--texts">
+                      <h1 class="headline catalog__categoryDesc--headline">
+                        DRINKS
+                      </h1>
+                      <p>Pilihan minuman khas Kabobs yang cocok banget jadi penyeimbang kebab kamu!</p>
+                    </div>
+                  </div>
+                  <!-- Items -->
+                  <div class="catalog__item catalog__item--drink" alt="ice-greenchy">
+                    <img src="./img/drinks/ice-greenchy.svg" alt="" />
+                    <h3 class="headline catalog__item__name">
+                      ICE GREENCHY
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--drink" alt="ice-tea">
+                    <img src="./img/drinks/ice-tea.svg" alt="" />
+                    <h3 class="headline catalog__item__name">
+                      ICE TEA
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--drink" alt="lemon-tea">
+                    <img src="./img/drinks/lemon-tea.svg" alt="" />
+                    <h3 class="headline catalog__item__name">
+                      LEMON TEA
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--drink" alt="lychee-tea">
+                    <img src="./img/drinks/lychee-tea.svg" alt="" />
+                    <h3 class="headline catalog__item__name">
+                      LYCHEE TEA
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--drink" alt="mango-tea">
+                    <img src="./img/drinks/mango-tea.svg" alt="" />
+                    <h3 class="headline catalog__item__name">
+                      MANGO TEA
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--drink" alt="coca-cola">
+                    <img src="./img/drinks/coca-cola.svg" alt="" />
+                    <h3 class="headline catalog__item__name">
+                      COCA COLA
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--drink" alt="mineral-water">
+                      <img src="./img/drinks/mineral-water.svg" alt="" />
+                    <h3 class="headline catalog__item__name">
+                      MINERAL WATER
+                    </h3>
+                  </div>
+                </div>
+                <!-- Category: Combobs -->
+                <div class="tab-pane fade catalog__ctgr" id="combobs" role="tabpanel" aria-labelledby="combobs-tab">
+                  <!-- Description -->
+                  <div class="catalog__item catalog__item--desc catalog__item--desc--combobs">
+                    <img src="./img/_menu-page/combobs.png" alt="Paket Combobs" class="icon catalog__ctgr__icon--desc" />
+                    <div class="catalog__item--desc--texts">
+                      <h1 class="headline catalog__categoryDesc--headline">
+                        PAKET COMBOBS
+                      </h1>
+                      <p>Pilihan paket kebab plus minum yang bikin kamu lebih hemat!</p>
+                    </div>
+                  </div>
+                  <!-- Items -->
+                  <div class="catalog__item catalog__item--combobs" alt="combobs2">
+                    <img src="./img/combobs/combobs2.svg" alt="" />
+                    <h3 class="headline catalog__item__name">
+                      COMBOBS2
+                    </h3>
+                  </div>
+                  <div class="catalog__item catalog__item--combobs" alt="combobs-family">
+                    <img src="./img/combobs/combobs-family.svg" alt="" />
+                    <h3 class="headline catalog__item__name">
+                      COMBOBS FAMILY
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__ctgr__icon--bottom">
+                  <img src="./img/_menu-page/ala-carte-underline.svg" alt="">
+                </div>
+            </section>
+          </div>
+        
+          <!-- Footer -->
+          <footer class="footer">
+            <section class="section section--footer">
+              <!-- Menu catalog -->
+              <div class="footer__segment footer__segment--catalog">
+                <h6>Menu</h6>
+                <a href="./menu.html#alacarte">Ala carte</a>
+                <a href="./menu.html#topping">Tambahan isi</a>
+                <a href="./menu.html#drinks">Drinks</a>
+                <a href="./menu.html#combobs">Paket combobs</a>
+                
+              </div>
+              <!-- Info -->
+              <div class="footer__segment footer__segment--info">
+                <h6>Info</h6>
+                <a href="./outlet.html">Outlets</a>
+                <a href="./story.html">Kabobs Secret</a>
+                <a href="./karir.html">Karir</a>
+                <a href="./kontak.html">Kontak</a>
+              </div>
+              <!-- Subscription -->
+              <div class="footer__segment footer__segment--subscription">
+                <h6>Newsletter</h6>
+                <p>
+                  Dapatkan email tentang promo,<br/>menu baru dan lowongan pekerjaan.
+                </p>
+                <form action="#" id="footer-subscription">
+                  <input type="email" class="subscriber-email" placeholder="Ketik alamat email">
+                  <input type="submit" value="OK" class="subscribe-btn">
+                </form>
+              </div>
+              <!-- Socmed -->
+              <div class="footer__segment footer__segment--socmed">
+                <h6>Kontak</h6>
+                <div class="ic-socmed instagram">
+                  <a href="#">
+                    <img src="./img/_footer/ic-instagram-black.svg" alt="Instagram"/>
+                    <span class="text-block">@kabobs.id</span>
+                  </a>
+                </div>
+                <div class="ic-socmed footer__segment--line">
+                  <a href="#">
+                    <img src="./img/_footer/ic-line-black.svg" alt="line"/>
+                    <span class="text-block">@kabobs.id</span>
+                  </a>
+                    
+                </div>
+                <div class="ic-socmed footer__segment--email">
+                  <a href="mailto:kabobs.id@gmail.com">
+                    <img src="./img/_footer/ic-email-black.svg" alt="email"/>
+                    <span class="text-block">kabobs.id@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Address -->
+              <div class="footer__segment footer__segment--address">
+                <address class="address">
+                  <a href="https://goo.gl/maps/4L7jb9NRuQM2">
+                    <h6>Management Office</h6>
+                    <p>Outlet Dago Lt. 2,<br/>Jl. Ir. H. Djuanda No. 310,<br/>Kota Bandung 40135
+                    </p>
+                  </a>
+                </address>
+              </div>
+              <!-- Logo -->
+              <div class="footer__segment--logo">
+                <a href="./index.html">
+                  <img src="./img/_topbar-and-nav/kabobs-logo.svg" alt="Home">
+                </a>
+              </div>
+              <div class="footer__segment--copyright">
+                <h6 class="copyright">© Kabobs 2019</h6>
+              </div>
+            </section>
+          </footer>
+        </div>
+      </main>
+      <!-- Topbar Nav Trigger-->
+      <div class="topbar__navtrigger topbar__navtrigger--black">
+          <div class="navtrigger__circle">
+            <div id="w-node-6468cbf9f5e7-fe23680f" class="navbar__trigger__rowbar"></div>
+            <div id="w-node-ac6f1eeed2a8-fe23680f" class="navbar__trigger__rowbar"></div>
+            <div id="w-node-7f52c76dd4d3-fe23680f" class="navbar__trigger__rowbar"></div>
+          </div>
+      </div>
+      <!-- Topbar Logo -->
+      <a href="./index.html" class="topbar__logo--type1 w-inline-block"><img src="img/logo-original-min.png" alt="" class="topbar__logo__img"></a>
+      <!-- Navigation -->
+      <nav class="mainNav">
+        <div class="mainNav__header">
+          <div class="mainNav__header__logo">
+            <a href="./index.html">
+              <img src="./img/logo-original-min.png" alt="Home">
+            </a>
+          </div>
+          <div class="mainNav__header__closeBtn" onclick="hideNav">
+            <img src="./img/_topbar-and-nav/ic-close-red.svg" alt="Menu">
+          </div>
+        </div>
+        <div class="mainNav__linkWrapper">
+          <a href="./menu.html" class="mainNav__link">MENU</a>
+          <a href="./outlet.html" class="mainNav__link">OUTLETS</a>
+          <a href="./story.html" class="mainNav__link">KABOBS<br/>SECRET</a>
+          <a href="./karir.html" class="mainNav__link">KARIR</a>
+          <a href="./kontak.html" class="mainNav__link">KONTAK</a>
+        </div>
+      </nav>
+    </div>
+
+
+  <!-- JQuery & Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- Main Javascript file -->
+  <script src="./js/script.js"></script>
+
+  <!-- Initialization -->
+  <script>
+    $(document).ready(() => {
+    let url = location.href.replace(/\/$/, "");
+    history.replaceState(null, null, url);
+  
+    if (location.hash) {
+      const hash = url.split("#");
+      $('#tabnavmenu a[href="#'+hash[1]+'"]').tab("show");
+      url = location.href.replace(/\/#/, "#");
+      history.replaceState(null, null, url);
+      setTimeout(() => {
+        $(window).scrollTop(0);
+      }, 30);
+    } 
+    
+    $('a[data-toggle="tab"]').on("click", function() {
+      let newUrl;
+      const hash = $(this).attr("href");
+      if(hash == "#alacarte") {
+        newUrl = url.split("#")[0];
+      } else {
+        newUrl = url.split("#")[0] + hash;
+      }
+        
+      });
+    });
+  </script>
+  <script>
+    const catalog = document.querySelector('.catalog');
+    
+    initEvent();
+
+    function initEvent() {
+      catalog.addEventListener('click', openSlide);
+    }
+
+    function openSlide(e) {
+      if (e.target.classList.contains('catalog__item--alacarte')) {
+        let hash=e.target.getAttribute('alt');
+        window.open('menu-slider-alacarte.html#' + hash, '_self')
+      } else if (e.target.parentElement.classList.contains('catalog__item--alacarte')) {
+        let hash=e.target.parentElement.getAttribute('alt');
+        window.open('menu-slider-alacarte.html#' + hash, '_self')
+      } else if (e.target.classList.contains('catalog__item--drink')) {
+        let hash=e.target.getAttribute('alt');
+        window.open('menu-slider-drink.html#' + hash, '_self')
+      } else if (e.target.parentElement.classList.contains('catalog__item--drink')) {
+        let hash=e.target.parentElement.getAttribute('alt');
+        window.open('menu-slider-drink.html#' + hash, '_self')
+      } else if (e.target.classList.contains('catalog__item--combobs')) {
+        let hash=e.target.getAttribute('alt');
+        window.open('menu-slider-combobs.html#' + hash, '_self')
+      } else if (e.target.parentElement.classList.contains('catalog__item--combobs')) {
+        let hash=e.target.parentElement.getAttribute('alt');
+        window.open('menu-slider-combobs.html#' + hash, '_self')
+      }
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.header--karir {
+  background-color: $red;
+
+  section {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.outletBoxes__box__list {
+  margin-bottom: 20px;
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    display: list-item;
+    list-style-position: outside;
+  }
+
+  ul li::before {
+    padding-right: 10px;
+  }
+}

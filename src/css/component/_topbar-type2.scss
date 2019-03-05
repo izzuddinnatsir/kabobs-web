@@ -1,0 +1,86 @@
+.topbar {
+	width: 100%;
+	grid-template-columns: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.section.section--topbar {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 60px;
+	width: 100%;
+	max-width: 100%;
+	align-items: center;
+	padding: 0 30px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px;
+}
+
+#section--topbar--menuPage,
+#section--topbar--outletPage,
+#section--topbar--storyPage,
+#section--topbar--karirPage,
+#section--topbar--kontakPage,
+#section--topbar--homePage {
+	@media only screen and (min-width: 720px) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.topbar__logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+
+	h1 {
+		font-family: $aquino;
+		font-size: 16px;
+		color: $red;
+		margin-left: 8px;
+
+		@media only screen and (min-width: 720px) and (max-width: 1099px) {
+			display: none;
+		}
+	}
+}
+
+.topbar__burger {
+	justify-self: end;
+	cursor: pointer;
+}
+
+.topbar__ornament {
+	display: none;
+	justify-self: center;
+	align-self: center;
+
+	img {
+		display: none;
+		width: 32px;
+		height: auto;
+		margin-top: 4px;
+
+		@media only screen and (min-width: 1100px) {
+			display: block;
+		}
+	}
+
+	@media only screen and (min-width: 720px) {
+		display: block;
+	}
+
+	h1 {
+		display: none;
+		font-family: $aquino;
+		font-size: 16px;
+		color: $red;
+
+		@media only screen and (max-width: 1099px) and (min-width: 720px) {
+			display: block;
+		}
+	}
+}

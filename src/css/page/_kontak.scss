@@ -1,0 +1,130 @@
+.header--kontak {
+	background-color: #43b049;
+
+	section {
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+}
+
+.mainContent__address,
+.mainContent__socmed {
+	@media only screen and (min-width: 720px) {
+		display: none;
+	}
+}
+
+.sidebar {
+	display: none;
+
+	@media only screen and (min-width: 1000px) {
+		display: block;
+	}
+	address,
+	.footer__segment--socmed {
+		margin-bottom: 30px;
+	}
+
+	h6 {
+		font-size: 16px;
+	}
+}
+
+.sidebar .mainContent {
+	padding: 40px 30px 0 30px;
+	margin-bottom: 50px;
+
+	p {
+		margin-bottom: 36px;
+	}
+}
+
+.mainContent.mainContent--twocol {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 40px;
+	margin-bottom: 80px;
+
+	.mainContent__leftSide {
+		padding: 0 20px;
+
+		p {
+			margin-bottom: 30px;
+		}
+	}
+	@media only screen and (min-width: 1000px) {
+		max-width: 1160px;
+		padding-top: 80px;
+		display: grid;
+		grid-template-columns: 7fr 5fr;
+		column-gap: 100px;
+		margin-bottom: 120px;
+
+		.mainContent__leftSide p {
+			margin-bottom: 30px;
+			padding: 0;
+		}
+	}
+}
+
+.mainContent__address {
+	margin-bottom: 10px;
+
+	h4 {
+		font-family: $avenir;
+		font-weight: bold;
+		font-style: normal;
+		font-size: 20px;
+		line-height: 40px;
+	}
+}
+
+.mainContent__socmed {
+	margin-bottom: 40px;
+}
+
+.mainContent__socmed__account {
+	margin-top: 30px;
+}
+
+.mainContent__socmed__link {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 36px;
+	color: $black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	img {
+		margin-right: 16px;
+	}
+}
+
+.mainContent__form {
+	margin: 0 -10px;
+
+	label {
+		font-size: 16px;
+	}
+
+	button {
+		margin: 10px auto 0 auto;
+		background-color: $yellow-light;
+		border: $yellow-dark-2 solid 2px;
+	}
+}
+
+.mainContent__form__input {
+	border: $yellow-dark-3 solid 1px;
+	border-radius: 4px;
+	height: 50px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.mainContent__form__input--textarea {
+	height: 200px;
+	overflow-y: scroll;
+}

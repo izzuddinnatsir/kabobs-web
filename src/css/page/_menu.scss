@@ -1,0 +1,418 @@
+// Tab Navigation
+.section--tabnav {
+  width: 100%;
+  font-family: $avenir;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 130px;
+  margin-bottom: 40px;
+
+  @media only screen and (min-width: 580px) {
+    width: auto;
+    margin-top: 160px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 900px) {
+    margin-top: 60px;
+  }
+}
+
+.tabnav {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+
+  @media only screen and (min-width: 580px) {
+    width: auto;
+    grid-auto-flow: column;
+    column-gap: 0;
+  }
+}
+
+.tabnav__item {
+  display: inline-block;
+  background-color: $yellow-light;
+  border: $yellow-dark-1 solid 1px;
+  text-align: center;
+  padding: 5px 0;
+
+  &:nth-child(2),
+  &:nth-child(4) {
+    border-right: none;
+  }
+
+  &:nth-child(1),
+  &:nth-child(3) {
+    border-left: none;
+    border-right: none;
+  }
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    border-bottom: none;
+  }
+
+  @media only screen and (min-width: 580px) {
+    border: $yellow-dark-1 solid 1px;
+    padding: 0;
+
+    &:nth-child(1) {
+      border-radius: 30px 0 0 30px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-right: -1px;
+    }
+
+    &:nth-child(4) {
+      margin-left: -1px;
+      border-radius: 0 30px 30px 0;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      border-right: $yellow-dark-1 solid 1px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      border-left: $yellow-dark-1 solid 1px;
+      border-right: $yellow-dark-1 solid 1px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-bottom: $yellow-dark-1 solid 1px;
+    }
+  }
+}
+
+.tabnav__item__link {
+  cursor: pointer;
+  color: $yellow-dark-1;
+  padding: 20px 30px;
+
+  &:hover,
+  &:active {
+    color: $yellow-dark-3;
+  }
+
+  &.active {
+    color: $yellow-dark-3;
+  }
+
+  @media only screen and (min-width: 580px) {
+    padding: 10px 20px;
+  }
+}
+
+// Catalog
+.section--catalog {
+  max-width: 1440px;
+  margin-bottom: 80px;
+
+  @media only screen and (min-width: 1240px) {
+    margin-bottom: 80px;
+  }
+}
+
+.catalog {
+  width: 100%;
+  background-color: white;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.catalog__ctgr__icon--top {
+  display: none;
+
+  @media only screen and (min-width: 500px) {
+    display: block;
+    margin: 0 auto 40px auto;
+  }
+}
+
+.catalog__ctgr__icon--bottom {
+  display: none;
+
+  @media only screen and (min-width: 500px) {
+    display: block;
+    margin: 100px auto 0 auto;
+  }
+}
+
+.catalog__ctgr__icon--desc {
+  display: block;
+
+  @media only screen and (min-width: 500px) {
+    display: none;
+  }
+}
+
+.catalog__ctgr.show {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+
+  @media only screen and (min-width: 500px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (min-width: 800px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media only screen and (min-width: 1240px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.catalog__item {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.headline.catalog__item__name {
+  position: absolute;
+  max-width: 220px;
+  font-family: $aquino;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  color: $yellow-light;
+  left: 30px;
+  bottom: 35px;
+}
+
+.catalog__item--desc {
+  display: grid;
+  text-align: left;
+  height: auto;
+  background: white;
+  padding-bottom: 40px;
+
+  .catalog__item--desc--texts {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 499px) {
+    grid-template-columns: 120px auto;
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 799px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding: 0 0 30px 0;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1000px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding: 0 0 30px 0;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 1000px) and (max-width: 1239px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding: 0 0 30px 0;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 1240px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 60px 0 40px;
+    text-align: right;
+
+    p {
+      font-size: 20px;
+      padding-top: 5px;
+    }
+  }
+
+  br {
+    display: none;
+    @media only screen and (min-width: 600px) {
+      // display: inline;
+    }
+  }
+
+  p {
+    max-width: 320px;
+
+    @media only screen and (min-width: 500px) and (max-width: 1240px) {
+      padding-top: 10px;
+      font-size: 24px;
+    }
+  }
+}
+
+.catalog__ctgr__icon--desc {
+  justify-self: center;
+  align-self: center;
+  width: 50px;
+}
+
+.catalog__categoryDesc--headline {
+  display: inline-block;
+  font-size: 20px;
+  background-color: $yellow;
+  line-height: 20px;
+}
+
+.catalog__item {
+  &.catalog__item--alacarte:nth-child(2) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/classic-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  &.catalog__item--alacarte:nth-child(3) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/blackpepper-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  &.catalog__item--alacarte:nth-child(4) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/full-beef-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  &.catalog__item--alacarte:nth-child(5) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/classic-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  &.catalog__item--alacarte:nth-child(6) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/triple-cheese-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  &.catalog__item--alacarte:nth-child(7) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/full-beef-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  &.catalog__item--alacarte:nth-child(8) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/beef-cheese-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  &.catalog__item--alacarte:nth-child(9) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/beef-cheesy-mayo-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  &.catalog__item--alacarte:nth-child(10) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/supreme-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+
+  &.catalog__item--alacarte:nth-child(11) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url(../img/foods/triple-cheese-min.jpg) no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+}
+
+// Catalog with icons
+.catalog__item--topping,
+.catalog__item--drink,
+.catalog__item--combobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .catalog__item__name {
+    color: $black;
+  }
+
+  img {
+    margin-top: -20px;
+    height: 100px;
+    width: auto;
+  }
+
+  &:nth-child(even) {
+    background-color: $yellow;
+  }
+  &:nth-child(odd) {
+    background-color: #fdfdfd;
+  }
+}
+
+.catalog__item--alacarte,
+.catalog__item--drink,
+.catalog__item--combobs {
+  cursor: pointer;
+}
