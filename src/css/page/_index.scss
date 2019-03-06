@@ -86,7 +86,7 @@ body.body-fixed {
   }
   .hero__button {
     position: relative;
-    z-index: 20;
+    z-index: 5;
   }
   .paragraph {
     padding: 0 60px;
@@ -141,6 +141,7 @@ body.body-fixed {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 48px;
   grid-template-rows: 48px;
+  z-index: 5;
 }
 
 .image {
@@ -202,14 +203,15 @@ body.body-fixed {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-auto-columns: 1fr;
+  grid-auto-columns: 50vw;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-areas: ".";
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 50vw;
+  grid-template-columns: 50vw;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+  justify-content: center;
 }
 
 .slogan__container__center {
@@ -222,12 +224,12 @@ body.body-fixed {
   margin-right: auto;
   margin-left: auto;
   justify-items: center;
-  grid-auto-columns: 1fr;
+  grid-auto-columns: 50vw;
   grid-column-gap: 0px;
   grid-row-gap: 16px;
   grid-template-areas: "." "." ".";
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 50vw;
+  grid-template-columns: 50vw;
   -ms-grid-rows: 36% 16px 21% 16px 42%;
   grid-template-rows: 36% 21% 42%;
 }
@@ -235,6 +237,7 @@ body.body-fixed {
 .slogan__text__resizer {
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 .slogan__text__resizer.veggies {
@@ -248,6 +251,7 @@ body.body-fixed {
 
 .image-3 {
   height: 100%;
+  margin: 0 auto;
 }
 
 .section--text {
@@ -450,7 +454,7 @@ body.body-fixed {
 }
 
 .moving-images__container.center.job {
-  height: 100%;
+  height: 36vw;
   max-height: 100%;
   -webkit-align-content: end;
   -ms-flex-line-pack: end;
@@ -555,6 +559,14 @@ body.body-fixed {
   max-height: 100%;
 }
 
+.moving-images__resizer.max-height.grid {
+  display: grid;
+  grid-template-rows: 100%;
+  align-items: end;
+}
+
+
+
 .image-full-width {
   width: 100%;
   max-width: none;
@@ -565,9 +577,7 @@ body.body-fixed {
 
 .image-full-width.max-height {
   position: relative;
-  bottom: 6%;
   height: auto;
-  max-height: 100%;
 }
 
 .body {
@@ -779,7 +789,7 @@ body.body-fixed {
 }
 
 .moving-images__item.raster.job-1 {
-  width: 60%;
+  width: 50%;
   height: 100%;
   max-height: 100%;
 }
@@ -859,6 +869,7 @@ body.body-fixed {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    z-index: 5;
   }
   .image {
     width: auto;
@@ -949,7 +960,7 @@ body.body-fixed {
   }
   .hero__button {
     top: 24vh;
-    z-index: 20;
+    z-index: 5;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -977,9 +988,12 @@ body.body-fixed {
   }
   .section--slogan {
     height: 100vw;
+    grid-auto-columns: 100vw;
+    -ms-grid-columns: 100vw;
+    grid-template-columns: 100vw;
   }
   .slogan__container__center {
-    width: 100%;
+    width: 100vw;
     height: 100vw;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -989,6 +1003,9 @@ body.body-fixed {
     -ms-flex-line-pack: center;
     align-content: center;
     grid-row-gap: 8px;
+    grid-auto-columns: 100vw;
+    -ms-grid-columns: 100vw;
+    grid-template-columns: 100vw;
   }
   .slogan__text__resizer.veggies {
     margin-top: -2px;

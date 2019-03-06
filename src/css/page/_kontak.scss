@@ -104,15 +104,29 @@
 
 .mainContent__form {
 	margin: 0 -10px;
+	display: grid;
+	justify-items: center;
 
 	label {
 		font-size: 16px;
 	}
 
 	button {
-		margin: 10px auto 0 auto;
+		height: 48px;
+		border-radius: 24px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0 auto;
 		background-color: $yellow-light;
 		border: $yellow-dark-2 solid 2px;
+		cursor: pointer;
+		text-transform: uppercase;
+		display: inline-block;
+		font-family: $avenir;
+		font-weight: bold;
+		color: $yellow-dark-4;
+		font-size: 12px;
+		letter-spacing: 4%;
 	}
 }
 
@@ -127,4 +141,5 @@
 .mainContent__form__input--textarea {
 	height: 200px;
 	overflow-y: scroll;
+	margin-bottom: 35px;
 }
