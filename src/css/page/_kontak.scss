@@ -105,7 +105,6 @@
 .mainContent__form {
 	margin: 0 -10px;
 	display: grid;
-	justify-items: center;
 
 	label {
 		font-size: 16px;
@@ -127,6 +126,7 @@
 		color: $yellow-dark-4;
 		font-size: 12px;
 		letter-spacing: 4%;
+		justify-self: center;
 	}
 }
 
